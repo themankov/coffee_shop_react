@@ -9,7 +9,7 @@ const Item = ({ cards }) => {
 
   return (
     <StyledItem>
-      <img src={elem.img} alt="item" className="left" />
+      <img src={`.${process.env.PUBLIC_URL}${elem.img}`} alt="item" className="left" />
       <div className="right">
         <div className="right-heading">About it</div>
         <Breds color="black" />
